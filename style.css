@@ -1,0 +1,70 @@
+    body{
+      background: url(images/bg-pattern-top.svg) no-repeat -50% 210% fixed ,url(images/bg-pattern-bottom.svg) no-repeat 140% -180% fixed , hsl(185, 75%, 39%);
+      display: flex;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      font-weight: 400;
+      font-family: "Kumbh Sans";
+      font-size: 20px;
+      color: hsl(227, 10%, 46%);
+    }
+    main{
+      width: 400px;
+      height: 430px;
+      background: white;
+      text-align: center;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .top{
+      width: 100%;
+    }
+    .picture{
+      position: relative;
+      scale: 1.2;
+      top: -13%;
+      border-radius: 50%;
+      outline: 5px solid white;
+    }
+    .profile{
+      margin-top: -50px;
+      margin-bottom: -10px;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: center;
+      grid-gap: 10px;
+    }
+    .name{
+      font-weight: 700;
+      color: hsl(229, 23%, 23%);
+    }
+    .city {
+      font-size: 17px;
+    }
+    .statbox{
+      margin-top: 30px;
+      border-top: 1px solid hsl(227deg 21% 88%);
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-auto-rows: 105px;
+      align-items: center;
+    }
+    .statis{
+      font-weight: 700;
+      color: hsl(229, 23%, 23%)
+    }
+    .tag{
+      margin-top: 5px;
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 375px){
+      body{
+        background: url(images/bg-pattern-top.svg) no-repeat 120% 450% fixed ,url(images/bg-pattern-bottom.svg) no-repeat -20% -250% fixed , hsl(185, 75%, 39%);        
+      }
+      .statbox{
+        grid-auto-rows: 150px;
+      }
+    }
